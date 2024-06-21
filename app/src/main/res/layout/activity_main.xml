@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Utilities.MainActivity">
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_dodge_board"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_outer_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/default_outer_Bmargin"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/grid_dodge1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/spaceship"
+            >
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/grid_dodge2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/spaceship"
+            >
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/grid_dodge3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/spaceship"
+            >
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/default_Inner_Relative_Margin">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/main_falling_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_left_column"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall11"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall21"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall31"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall41"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall51"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall61"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall71"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall81"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_center_column"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall12"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall22"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall32"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall42"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall52"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall62"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall72"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall82"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/main_right_column"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall13"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall23"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall33"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall43"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall53"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall63"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall73"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/grid_fall83"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/asteroid"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:icon="@drawable/left_arrow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/default_margin"
+        android:backgroundTint="@color/cyan"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/main_FAB_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:icon="@drawable/right_arrow"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/default_margin"
+        android:backgroundTint="@color/cyan"
+
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart"
+            />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_heart3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

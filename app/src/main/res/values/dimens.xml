@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_outer_height">90dp</dimen>
+    <dimen name="default_outer_Bmargin">90dp</dimen>
+    <dimen name="default_Inner_Relative_Margin">60dp</dimen>
+    <dimen name="default_margin">32dp</dimen>
+</resources>
