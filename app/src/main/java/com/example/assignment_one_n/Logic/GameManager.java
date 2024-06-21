@@ -12,7 +12,7 @@ public class GameManager {
     private int[][] obstacleBoard;
     private int[] dodgeBoard;
 
-    private int life;
+    private final int life;
     private int hitNum;
 
     private int currentCol;
@@ -110,16 +110,6 @@ public class GameManager {
 
     public int[] getDodgeBoard() {
         return dodgeBoard;
-    }
-
-    public GameManager setObstacleBoard(int[][] obstacleBoard) {
-        this.obstacleBoard = obstacleBoard;
-        return this;
-    }
-
-    public GameManager setDodgeBoard(int[] dodgeBoard) {
-        this.dodgeBoard = dodgeBoard;
-        return this;
     }
 
     public int getHitNum() {
