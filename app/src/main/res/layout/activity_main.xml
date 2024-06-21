@@ -271,10 +271,10 @@
         />
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="@dimen/default_heart_width"
+        android:layout_height="@dimen/default_heart_height"
+        android:layout_marginTop="@dimen/default_heart_marginTop"
+        android:layout_marginEnd="@dimen/default_heart_marginEnd"
         android:layout_alignParentEnd="true"
         >
 
